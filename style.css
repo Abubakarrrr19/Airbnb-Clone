@@ -5,6 +5,7 @@ body{
     padding: 0px;
     font-family: "Poppins", sans-serif;
     background-color: #f4f4f4;
+    height: 100vh;
 }
 
 .navbar{
@@ -89,7 +90,8 @@ body{
     height: 45px;
     background-size: cover;
     background-position: center;
-    padding: 12px;      
+    padding: 12px; 
+    mix-blend-mode: multiply;     
 }
 
 .user-option{
@@ -108,19 +110,28 @@ body{
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+}
+
 .search-box{
     display: flex;
     align-items: center;
-    height: 75px;
-    width: 900px;
+    justify-content: center;
     border: 1px solid #ddd;
     border-radius: 50px;
-    margin-left: 18%;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    background-color: #f4f4f4;
 }
 
 .search-box .where{
-    padding: 12px;
+    padding: 13px 50px;
+    display: flex;
+    flex-direction: column;
 }
 
 .search-box .where:hover{
@@ -128,8 +139,15 @@ body{
     cursor: pointer;
 }
 
+.search-box .where:hover input{
+    background-color: #ddd;
+    cursor: pointer;
+}
+
 .search-box .check-in{
-    padding: 12px;
+    padding: 12px 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .search-box .check-in:hover{
@@ -137,8 +155,15 @@ body{
     cursor: pointer;
 }
 
+.search-box .check-in:hover input{
+    background-color: #ddd;
+    cursor: pointer;
+}
+
 .search-box .check-out{
-    padding: 12px;
+    padding: 12px 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .search-box .check-out:hover{
@@ -146,8 +171,15 @@ body{
     cursor: pointer;
 }
 
+.search-box .check-out:hover input{
+    background-color: #ddd;
+    cursor: pointer;
+}
+
 .search-box .who{
-    padding: 12px;
+    padding: 13px 25px;
+    display: flex;
+    flex-direction: column;
 }
 
 .search-box .who:hover{
@@ -155,16 +187,22 @@ body{
     cursor: pointer;
 }
 
+.search-box .who:hover input{
+    background-color:#ddd ;
+    cursor: pointer;
+}
+
 .search-box span{
     font-size: 13px;
     font-weight: 500;
-    padding-left: 9px;
+    padding-left: 5px;
 }
 
 .search-box input{
-    padding: 7px;
+    padding: 5px;
     border: none;
     font-size: 13px;
+    background-color: #f4f4f4;
 }
 
 .search-box .search{
@@ -173,7 +211,7 @@ body{
     background-color: #FF385C;
     border-radius: 50%;
     padding: 10px;
-    margin-right: 10px;
+    margin: 0px 8px;
 }
 
 .search-box .search:hover{
@@ -191,7 +229,7 @@ body{
 }
 
 hr{
-    margin-top: 25px;
+    margin-top: 50px;
     border: 0px;
     height: 2px;
     background-color: #ddd;
@@ -202,7 +240,7 @@ hr{
     flex-direction: row;
     gap: 20px;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 20px 20px 30px 20px;
     margin: 20px;
@@ -221,6 +259,11 @@ hr{
     height: 300px;
     width: 100%;
     border-radius: 15px;
+    transition: all .40s;
+}
+
+.item-1 img:hover{
+    transform: scale(0.9);
 }
 
 .item-1 .word-1{
@@ -252,46 +295,17 @@ hr{
     margin-top: 12px;
 }
 
-.item-2{
-    height: 400px;
-    width: 300px;
-    background-color: #d76b7e;
+.head span{
+    text-align: right;
+    display: flex;
+    justify-content: right;
+    padding-right: 5px;
 }
 
-.item-3{
-    height: 400px;
-    width: 300px;
-    background-color: #d76b7e;
+.item-1 .heart{
+    position: fixed;
+    left: 300px;
+    top: 240px;
+    color: white;
+    font-size: 35px;
 }
-
-.item-4{
-    height: 400px;
-    width: 300px;
-    background-color: #d76b7e;
-}
-
-.item-5{
-    height: 400px;
-    width: 300px;
-    background-color: #d76b7e;
-}
-
-.item-6{
-    height: 400px;
-    width: 300px;
-    background-color: #d76b7e;
-}
-
-.item-7{
-    height: 400px;
-    width: 300px;
-    background-color: #d76b7e;
-}
-
-.item-8{
-    height: 400px;
-    width: 300px;
-    background-color: #d76b7e;
-}
-
-
