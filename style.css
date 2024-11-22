@@ -126,6 +126,7 @@ body{
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
     position: fixed;
     background-color: #f4f4f4;
+    z-index: 1000;
 }
 
 .search-box .where{
@@ -253,6 +254,7 @@ hr{
     display: flex;
     flex-direction: column;
     border-radius: 15px;
+    position: relative;
 }
 
 .item-1 img{
@@ -303,9 +305,9 @@ hr{
 }
 
 .item-1 .heart{
-    position: fixed;
-    left: 300px;
-    top: 240px;
+    position: absolute;
+    top: 10px;
+    right: 22px;
     color: white;
     font-size: 35px;
 }
